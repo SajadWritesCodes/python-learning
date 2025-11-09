@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+*.pyc
+project_euler_0.py
+project_euler_01.py
+learning-git
