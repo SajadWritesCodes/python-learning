@@ -1,6 +1,6 @@
 
 def arithmetic_arranger(problems, show_answers=False):     
-    arithmetic_sorter(raw_data(problems), True)
+    arithmetic_sorter(raw_data(problems), show_answers)
     
 def raw_data(problems):
     list_of_dicts = []
