@@ -10,6 +10,9 @@ def raw_data(problems):
         new_dict["first arg"] = splited_args[0]
         new_dict["operator"] = splited_args[1]
         new_dict["second arg"]= splited_args[2]
+        if len(new_dict["first arg"]) > 4 or len(new_dict["second arg"]) > 4:
+            return 'Error: Numbers cannot be more than four digits.'
+            
      
             
         if len(new_dict["first arg"]) > len(new_dict["second arg"]):
@@ -43,7 +46,7 @@ def raw_data(problems):
     return list_of_dicts
 
 def arithmetic_sorter(data_set, show_answers=False):
-    if data_set is list:
+    if isinstance(data_set, list):
         for _ in data_set:
             first_arg = _["first arg"]
             print (first_arg + "    ", end="")
@@ -68,6 +71,6 @@ def arithmetic_sorter(data_set, show_answers=False):
         print(data_set)
 
 
-arithmetic_arranger(["3801 - 3802", "1h3 + 49", "11 - 111", "122 - 1222","111 - 18", "26 - 2666"])  
+arithmetic_arranger(["3801 - 3802", "13 + 49", "11 - 111", "122 - 1222","111 - 18"])  
 
 
